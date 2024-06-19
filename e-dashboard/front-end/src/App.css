@@ -1,0 +1,261 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  margin-top: 25px;
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  transition: 0.2s ease-out;
+}
+
+.navbar ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 20px;
+  color: rgb(1, 99, 138);
+}
+
+.navbar ul li:hover {
+  scale: 1.05;
+}
+
+img {
+  margin-left: 30px;
+  margin-top: 15px;
+  width: 60px;
+}
+
+.SignUpContainer,
+.LoginContainer,
+.ItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.29;
+  outline: 2px solid transparent;
+  width: 100%;
+  height: 35px;
+  margin: 19px 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  background-color: #fff;
+  padding: 0 16px;
+  color: #161616;
+  transition: 0.2s ease-in-out;
+}
+
+.input-field:focus {
+  border-bottom: 2px solid rgb(3, 134, 186);
+}
+
+.pass-field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.show-password {
+  position: absolute;
+  right: 1%;
+  bottom: 25%;
+  height: fit-content;
+  height: 20px;
+  color: #8d8d8d
+}
+
+.form p {
+  margin-top: 0px;
+}
+
+.form p span {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.error {
+  margin: 0;
+  padding-left: 15px;
+  align-self: flex-start;
+  color: red;
+}
+
+.formBtn {
+  margin-top: 25px;
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  width: 430px;
+  background-color: rgb(2, 113, 158);
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.formBtn:hover {
+  scale: 1.01;
+  background-color: rgb(0, 100, 139);
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.product-list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 40px;
+  font-weight: 500;
+  padding: 0;
+  border: 1px solid rgb(0, 100, 139);
+  text-align: center;
+  color: #5d8435;
+}
+
+.heading-li li {
+  font-weight: 700 !important;
+  color: #395121 !important;
+}
+
+.search-box {
+  width: 500px;
+  margin: 25px 0;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #5d8435;
+}
+
+.search-box:focus {
+  outline: 1px solid rgb(0, 100, 139);
+}
+
+.add-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-radius: 50%;
+  background-color: #5d8435;
+  bottom: 4%;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4081;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(0, 100, 139);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-details input {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  width: 180px;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.profile-item label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.masked-password {
+  letter-spacing: 2px;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.update-btn {
+  margin: 0;
+  padding: 0;
+  margin: 9px;
+  cursor: pointer;
+}
